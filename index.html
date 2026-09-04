@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sorting Algorithm Visualizer</h1>
+    <div class="controls">
+      <button id="generate-btn">Generate New Array</button>
+      <button id="start-btn">Start All</button>
+      <button id="pause-btn">Pause All</button>
+      <button id="reset-btn">Reset</button>
+      <label>
+        Speed:
+        <input type="range" id="speed-slider" min="-100" max="100" value="50">
+      </label>
+      <label>
+        Array Size:
+        <input type="range" id="size-slider" min="10" max="200" value="50">
+      </label>
+      <label>
+        <input type="checkbox" id="audio-toggle" checked> Audio
+      </label>
+      <label>
+        <input type="checkbox" id="compare-toggle" checked> Highlight Comparisons
+      </label>
+    </div>
+  </header>
+  <main id="containers"></main>
+  <script src="algorithms.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
